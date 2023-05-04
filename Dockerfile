@@ -1,6 +1,6 @@
 # Builds a python image
 # with Django installed and running the app
-FROM python:3-slim
+FROM --platform=$BUILDPLATFORM python:3-slim
 LABEL author="Vidyasagar Machupalli"
 ENV PYTHONUNBUFFERED 1
 RUN mkdir /code
